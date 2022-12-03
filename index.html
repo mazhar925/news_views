@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Views</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body onload="news(08)">
+    <section class="header">
+        <div class="header--container">
+            <div class="logo">
+                <p class="logo--normal">News</p>
+                <p class="logo--color">Views</p>
+            </div>
+            <div class="nav">
+                <a href="./index.html">News</a>
+                <a href="./blog.html">Blogs</a>
+            </div>
+        </div>
+        <div class="cat--nav">
+            <div class="burgerBtn" id="burgerBtn" onclick="burgerFunction()">
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+            <div class="cat--menu" id="catMenu">
+                <div class="cat--navbar" id="menuDown"></div>
+            </div>
+        </div>
+        <div class="counter--news">
+            <div class="ring" id="ring">
+                <div></div>
+            </div>
+            <p id="newsCount"></p>
+        </div>
+    </section>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div id="newsDetails">
+            </div>
+        </div>
+      
+      </div>
+
+    <section class="main">
+      <div class="card--container" id="news--cards">
+        
+      </div>
+    </section>
+    <section class="footer">
+        <h3>Copyright 2022 News Views</h3>
+    </section>
+    
+    <script src="./js/index.js"></script>
+</body>
+</html>

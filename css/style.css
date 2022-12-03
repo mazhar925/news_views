@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.header, .main, .footer{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.header--container{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    padding-bottom: 25px;
+    border-bottom: 2px solid #000;
+}
+.logo{
+    display: flex;
+    font-size: 18px;
+    font-weight: 700;
+}
+.logo--normal{
+    padding: 5px 0px;
+    color: #000;
+}
+.logo--color{
+    margin-left: 5px;
+    padding: 5px 10px;
+    background-color: #512F70;
+    color: #fff;
+}
+.nav a{
+    margin-left: 5px;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+.cat--nav{
+    display: flex;
+    width: 95%;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.cat--navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+.cat--menu{
+    display: block;
+}
+.cat--button{
+    width: 150px;
+    background-color: #512F70;
+    color: #fff;
+    height: 30px;
+    border: none;
+}
+.burgerBtn{
+    display: none;
+}
+.burger{
+    background-color: #512F70;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+}
+.line1, .line2, .line3{
+    width: 30px;
+    height: 2px;
+    margin-bottom: 2px;
+    margin-right: 5px;
+    background-color: #fff;
+}
+.card--container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+.counter--news{
+    margin-top: 15px;
+}
+.card{
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.card--img{
+    height: 98%;
+    width: 25%;
+    overflow: hidden;
+}
+.card--img img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.card--text{
+    width: 73%;
+    height: 80%;
+    padding: 0 5px;
+}
+.card--details{
+    margin-top: 7px;
+}
+.author{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card--bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.card--bottom button{
+    margin-right: 20px;
+    background-color: #512F70;
+    color: #fff;
+    border: none;
+    width: 100px;
+    height: 40px;
+    margin-left: 10px;
+    padding: 10px;
+}
+.author img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+.author p{
+    margin-left: 5px;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  .modal--content {
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  .close {
+    color: #aaaaaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-end;
+  }
+  .footer h3{
+    margin: 25px 0;
+  }
+
+@media screen and (max-width: 900px) {
+    .cat--button{
+        width: 100%;
+        margin-top: 2px;
+    }
+    .card{
+        width: 95%;
+        flex-direction: column;
+    }
+    .card--img{
+        width: 70%;
+    }
+    .burgerBtn{
+        display: block;
+    }
+    .author{
+        margin-right: 10px;
+    }
+    .cat--menu{
+        display: none;
+    }
+    .card--bottom{
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+    .card--bottom button{
+        width: 200px;
+        margin-left: 20px;
+    }
+}
+@media screen and (min-width: 901px) {
+    .burgerBtn{
+        display: none;
+    }
+    .cat--menu{
+        display: block;
+    }
+    
+}
+.ring {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    display: none;
+  }
+.ring div {
+    width: 50px;
+    height: 50px;
+    margin: 8px;
+    border: 5px solid #000;
+    border-radius: 50%;
+    animation: ring 1s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #000 transparent transparent;
+  }
+
+  @keyframes ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
